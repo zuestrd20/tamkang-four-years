@@ -30,10 +30,10 @@
 
 ## 本機開發
 
-使用 Node.js 20+：
+使用 Node.js 20.19+、22.12+ 或 24+：
 
 ```sh
-npm install
+npm ci
 npm test
 python3 -m http.server 8080
 ```
