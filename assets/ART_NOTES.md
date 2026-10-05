@@ -1,0 +1,24 @@
+# Original illustration assets
+
+Created for this project with the built-in image-generation tool. No stock images, external artwork, recognizable game assets, or copied university architecture were used. All depicted main characters are fictional adults. Architecture is an imagined hillside river campus and makes no factual architectural claim about a real university.
+
+## Files and integration
+
+- `campus.png`: 1536 × 1024. Detailed, warm afternoon campus landscape; safe to display as a responsive cover image. The center fountain and upper-right river are useful focal points.
+- `characters.png`: 1254 × 1254. Four equal 627 × 627 character tiles in a 2 × 2 sheet. Keep each portrait square and use `background-size: 200% 200%`.
+  - Top left, position `0% 0%`: 姜彥廷, teal jacket and ochre backpack.
+  - Top right, position `100% 0%`: 林沐, round glasses and orange jacket, robotics notebook.
+  - Bottom left, position `0% 100%`: 陳柏宇, navy varsity jacket, warm yellow shirt.
+  - Bottom right, position `100% 100%`: 許予安, sage cardigan, crossbody bag, sketchbook.
+
+The four-tile sheet has no added text, labels, borders, or watermarks. CSS cropping preserves the generated original without destructive edits. PNGs are self-contained and require no remote fonts, images, APIs, or runtime requests beyond serving these local files.
+
+## Generation prompts
+
+### Campus
+
+Use case: illustration-story. Asset type: background illustration for an original Traditional Chinese university-life browser game. Create a polished original cozy indie-game landscape of a fictional hillside Taiwanese university overlooking a broad pale turquoise river, distant sage green mountains, warm hazy afternoon sunshine. Charming detailed isometric campus miniature with cream academic buildings, terracotta tiled roofs, a modest imaginary clock tower, a central little fountain plaza, leafy trees and pink flowering trees, benches, a basketball court, bicycles, tiny casually dressed adult students. Strong expressive illustrated shapes, hand-painted gouache texture with tidy dark teal linework, sophisticated warm ivory, faded peach, olive, dusty teal and deep navy palette. Beautiful premium editorial game art, calm welcoming mood, engaging details. Wide panoramic landscape around 3:2 aspect ratio. Entire campus occupies center and lower portion, sky mountains and river across upper third, no text or lettering anywhere, no titles, no interface, no logos, no watermark. The architecture is entirely invented; do not copy any real university buildings or identifiable copyrighted game assets. Composition fills frame attractively and stays legible at web hero size.
+
+### Character sheet
+
+Use case: illustration-story. Asset type: four original adult character portrait tiles for a Traditional Chinese university-life browser game, delivered together as one SQUARE 2-by-2 contact sheet. Exactly four equal square quadrants, no gutters, no border, no lettering anywhere. Each quadrant is an independent centered waist-up portrait with complete hair top and shoulders comfortably inside its own square, a warm ivory plain background; characters do not overlap panels. Consistent premium hand-painted gouache editorial anime game illustration, beautiful tidy dark teal linework, warm ivory/peach/olive/dusty teal/deep navy palette, appealing expressive faces, casual university style. All four are clearly adult East Asian university students aged 20 to 23, no school uniforms. TOP LEFT: original fictional male protagonist, 20 years old, gently tousled short dark brown hair, friendly thoughtful half-smile, dark teal overshirt over cream t-shirt, ochre backpack straps, one hand lightly holding strap, looking at viewer. TOP RIGHT: original fictional woman robotics student, 22 years old, long dark hair loosely tied back, subtle round glasses, warm alert eyes, rust-orange work jacket over cream shirt, holding a small simple robotics parts notebook close to her chest, poised curious smile. BOTTOM LEFT: original fictional male student club organizer, 22 years old, short fluffy dark hair, broad friendly smile, muted blue varsity jacket and warm yellow t-shirt, relaxed open posture, a slim notebook under one arm. BOTTOM RIGHT: original fictional nonbinary adult design student, 21 years old, short artfully tousled dark hair with a small subtle auburn streak, thin earrings, sage green cardigan over dark shirt, canvas crossbody bag, holding a sketchbook, quietly confident warm expression. Keep all four equally beautiful, equally detailed, same head size and camera distance; character heads stay well within their own quadrants so each tile can be used independently. Calm textured ivory backgrounds, no decorative objects behind them, no text, names, logos, watermark, or UI. Entirely original characters, no resemblance to known fictional characters or real people.

@@ -1,0 +1,1 @@
+{"name":"tamkang-four-years","version":"1.0.0","type":"module","private":true,"scripts":{"test":"node --test engine.test.mjs ui.test.mjs"}}
