@@ -215,7 +215,7 @@ export function advanceMonth(input, plan) {
   validateState(input);
   if (input.finished) fail('四年旅程已經完成，重新開始才能展開下一段故事。');
   if (input.pendingEvent) fail('請先完成眼前的事件選擇。');
-  if (!Array.isArray(plan) || plan.length !== 3 || !plan.every(id => typeof id === 'string' && Object.hasOwn(ACTIONS, id))) fail('每個月需要安排三個有效行動；同一行動可以重複。');
+  if (!Array.isArray(plan) || plan.length !== 3 || !Array.from(plan).every(id => typeof id === 'string' && Object.hasOwn(ACTIONS, id))) fail('每個月需要安排三個有效行動；同一行動可以重複。');
   const state = clone(input);
   const before = { ...state.stats };
   const year = yearOf(state.month);

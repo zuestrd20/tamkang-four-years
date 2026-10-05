@@ -1,4 +1,4 @@
-# 四年之間：模擬引擎 API
+# 風起淡水：四年練習曲 · 模擬引擎 API
 
 `engine.js` is a pure ES module. All names and writing are Traditional Chinese. Characters are fictional adults; grades, opportunities and finances are fictional game mechanics, not official school information.
 
@@ -46,8 +46,15 @@
 
 Display next month as `state.month + 1` while under 48. Year = `Math.min(4, Math.floor(state.month / 12) + 1)`; semester = `Math.min(8, Math.floor(state.month / 6) + 1)`. A pending event belongs to the just-completed month. Month 48 has no new event, and graduates immediately.
 
-Each month has exactly three actions. Monthly support is $3,000, living costs $2,800. Money never falls below zero; an automatic one-time-per-month emergency grant covers a shortfall and adds stress. Health never hardlocks progress; low health triggers recovery. Other stats are clamped to 0..100; money to 0..999,999. High stress and low health reduce academic gains, while high stress also costs health. Actions are resolved in selected order, so rest first can help.
+Each month has exactly three actions. Monthly support is $3,000, living costs $2,800. Money never falls below zero; an automatic emergency grant covers a shortfall and adds stress. Health never hardlocks progress; low health triggers recovery. Other stats are clamped to 0..100; money to 0..999,999. High stress and low health reduce academic gains, while high stress also costs health. Actions are resolved in selected order, so rest first can help.
 
 Events occur after odd-numbered months and every semester final (6, 12, ... 42). A seeded shuffled 16-card deck prevents repeats until exhausted. Options are always affordable via the same emergency-grant safety net. Each semester records a grade. Plans, optional challenges, seed and event choices all affect outcomes.
 
 UI should catch thrown errors and show `error.message`, and render text via textContent rather than innerHTML. The engine never reads DOM, storage, network or current time.
+
+
+## Verification
+
+Run `node --test engine.test.mjs` (Node with native ES modules). The suite covers 80 seeded random-policy complete runs, all seven reachable endings, fixed-step time, early internship fallback, action costs, low-health/low-budget recovery, bounded stats, optional once-per-semester puzzles, event deck uniqueness, independent input state, interrupted event saves, deterministic resumption, and malformed save rejection.
+
+Seven reachable reference policies are in `engine.test.mjs`. These are test fixtures, not required strategies. No network access or real school data is used.
